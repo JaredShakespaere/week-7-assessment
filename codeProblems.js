@@ -1,35 +1,20 @@
-//Write a function that takes in an array of numbers. 
-//The function should return True if any two numbers 
-//in list sum to 0, and false otherwise.
 
-function sumZero(arr){
-    for(let i = 0; i < arr.length; i++){
-        testNum = arr[i]
-        for(let j = 0; j < arr.length; j++){
-            otherNum = arr[j]
-            
-        };
-        let tester = testNum + otherNum
-        let trueCount = 0
-        let falseCount = 0
-            if(tester === 0){
-                trueCount++
-                console.log(trueCount + 'true')
-            } else if(tester > 0){
-               falseCount++
-               console.log(falseCount + 'false')
-            }else if(trueCount > 0){
-                console.log(true)
-            } else if(falseCount > 0){
-                console.log(false)
+
+function addToZero(Arr) {
+    let zeroSum = false
+    for (let i = 0; i <Arr.length; i++) {
+        for (let j = 0; j <Arr.length; j++){
+            let ans = Arr[i] + Arr[j]
+            if (ans === 0){
+                return sumPos === true
+            }else{
+                return sumPos === false
             }
-            
         }
-        
+    }
+     console.log(sumPos)
+}
 
+newArr = [1,2,3,4]
 
-    };
-
-newArray = [1,-1,2,5,6,3]
-
-sumZero(newArray)
+addToZero(newArr)
