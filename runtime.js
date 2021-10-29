@@ -44,16 +44,17 @@ const extraLargeArray = getSizedArray(100000);
 
 // How long does it take to double every number in a given 
 // array? 
+//ANSWER extraLargeArray- it takes the function longer to finish when using the unshift method.
 
 // Try it with first function
 perf.start();                     // Starts timer
-doublerAppend(extraLargeArray);
+doublerAppend(tinyArray);
 let resultsAppend = perf.stop();  // Stops timer and save time results
 
 
 // Try it with second function
 perf.start();
-doublerInsert(extraLargeArray);
+doublerInsert(tinyArray);
 let resultsInsert = perf.stop();
 
 
